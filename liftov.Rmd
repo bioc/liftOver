@@ -1,8 +1,8 @@
-
-<!--
-%\VignetteEngine{knitr::knitr}
-%\VignetteIndexEntry{Changing genomic coordinate systems with rtracklayer::liftOver}
--->
+---
+vignette: >
+  %\VignetteIndexEntry{Changing genomic coordinate systems with rtracklayer::liftOver}
+  %\VignetteEngine{knitr::rmarkdown}
+---
 
 <h1>Changing genomic coordinate systems with rtracklayer::liftOver</h1>
 
