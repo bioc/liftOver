@@ -1,10 +1,12 @@
 ---
+title: Changing genomic coordinate systems with rtracklayer::liftOver
+output:
+  html_document:
+    toc: true
 vignette: >
   %\VignetteIndexEntry{Changing genomic coordinate systems with rtracklayer::liftOver}
   %\VignetteEngine{knitr::rmarkdown}
 ---
-
-<h1>Changing genomic coordinate systems with rtracklayer::liftOver</h1>
 
 The liftOver facilities developed in conjunction with the UCSC
 browser track infrastructure are available for transforming
@@ -12,7 +14,7 @@ data in GRanges formats.  This is illustrated here with
 an image of the NHGRI GWAS catalog that is, as of Oct. 31 2014,
 distributed with coordinates defined by NCBI build hg38.
 
-<h2>Setup: The NHGRI GWAS catalog as an hg38-based GRanges</h2>
+# Setup: The NHGRI GWAS catalog as an hg38-based GRanges
 
 ```{r doit,echo=FALSE,results="hide"}
 library(gwascat)
@@ -26,7 +28,7 @@ cur = makeCurrentGwascat()  # result varies by day
 cur
 ```
 
-<h2>Resource: The chain file for hg38 to hg19 transformation</h2>
+# Resource: The chain file for hg38 to hg19 transformation
 
 The transformation to hg19 coordinates is defined by a chain
 file provided by UCSC.  rtracklayer::import.chain will
@@ -50,7 +52,7 @@ in the import.chain man page
    sequence).
 </pre>
 
-<h2>Action: liftOver</h2>
+# Action: liftOver
 
 The liftOver function will create a GRangesList.
 
