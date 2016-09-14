@@ -79,6 +79,5 @@ length(cur)-length(cur19)
 setdiff(cur$SNPs, cur19$SNPs)
 ```
 
-It may be interesting to
-<a href=http://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=687289>
-follow up</a> some of the losses.
+It may be interesting to [follow up](http://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=687289)
+some of the losses.
