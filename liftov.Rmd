@@ -18,6 +18,10 @@ distributed with coordinates defined by NCBI build hg38.
 
 ```{r doit,echo=FALSE,results="hide"}
 library(gwascat)
+library(GenomicRanges)
+library(rtracklayer)
+library(Homo.sapiens)
+library(BiocGenerics)
 if (!exists("cur")) load("cur.rda")
 ```
 ```{r lkOne,eval=FALSE}
