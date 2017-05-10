@@ -11,7 +11,7 @@ vignette: >
 The liftOver facilities developed in conjunction with the UCSC
 browser track infrastructure are available for transforming
 data in GRanges formats.  This is illustrated here with
-an image of the NHGRI GWAS catalog that is, as of Oct. 31 2014,
+an image of the EBI/NHGRI GWAS catalog that is, as of May 10 2017,
 distributed with coordinates defined by NCBI build hg38.
 
 # Setup: The NHGRI GWAS catalog as an hg38-based GRanges
