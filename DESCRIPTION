@@ -1,4 +1,4 @@
-Package: liftover
+Package: liftOver
 Title: Changing genomic coordinate systems with rtracklayer::liftOver 
 Version: 1.0.0
 Date: 2017-09-05
