@@ -22,7 +22,7 @@ library(GenomicRanges)
 library(rtracklayer)
 library(Homo.sapiens)
 library(BiocGenerics)
-library(liftover)
+library(liftOver)
 ```
 ```{r lkOne,eval=FALSE}
 library(gwascat)
@@ -42,7 +42,7 @@ bring the data into R.
 
 ```{r getch}
 library(rtracklayer)
-path = system.file(package="liftover", "extdata", "hg38ToHg19.over.chain")
+path = system.file(package="liftOver", "extdata", "hg38ToHg19.over.chain")
 ch = import.chain(path)
 ch
 str(ch[[1]])
