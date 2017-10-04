@@ -17,7 +17,7 @@ distributed with coordinates defined by NCBI build hg38.
 # Setup: The NHGRI GWAS catalog as an hg38-based GRanges
 
 ```{r}
-library("liftover")
+library("liftOver")
 ```
 
 ```{r doit, eval=FALSE}
