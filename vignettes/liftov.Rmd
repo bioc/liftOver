@@ -16,18 +16,14 @@ distributed with coordinates defined by NCBI build hg38.
 
 # Setup: The NHGRI GWAS catalog as an hg38-based GRanges
 
-```{r}
-library("liftOver")
-```
-
-```{r doit, eval=FALSE}
+```{r doit,echo=FALSE,results="hide"}
 library(gwascat)
 library(GenomicRanges)
 library(rtracklayer)
 library(Homo.sapiens)
 library(BiocGenerics)
+library(liftOver)
 ```
-
 ```{r lkOne,eval=FALSE}
 library(gwascat)
 cur = makeCurrentGwascat()  # result varies by day
@@ -45,6 +41,7 @@ file provided by UCSC.  rtracklayer::import.chain will
 bring the data into R.
 
 ```{r getch}
+library(rtracklayer)
 path = system.file(package="liftOver", "extdata", "hg38ToHg19.over.chain")
 ch = import.chain(path)
 ch
