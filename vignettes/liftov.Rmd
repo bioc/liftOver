@@ -51,7 +51,7 @@ cur = makeCurrentGwascat()  # result varies by day
 
 ```{r lkcur}
 data(cur)
-# cur
+cur
 ```
 
 # Resource: The chain file for hg38 to hg19 transformation
@@ -103,7 +103,7 @@ We see that the translation leads to a loss of some loci.
 
 ```{r lkloss}
 length(cur)-length(cur19)
-setdiff(cur$SNPs, cur19$SNPs)
+setdiff(mcols(cur)$SNPS, mcols(cur19)$SNPS)
 ```
 
 It may be interesting to [follow up](http://www.ncbi.nlm.nih.gov/projects/SNP/snp_ref.cgi?rs=687289)
