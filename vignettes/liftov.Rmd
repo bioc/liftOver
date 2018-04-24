@@ -1,11 +1,14 @@
 ---
 title: Changing genomic coordinate systems with rtracklayer::liftOver
 output:
-  html_document:
-    toc: true
+  BiocStyle::html_document
+date: 24 April 2018
 vignette: >
   %\VignetteIndexEntry{Changing genomic coordinate systems with rtracklayer::liftOver}
   %\VignetteEngine{knitr::rmarkdown}
+author:
+- name: Bioconductor Maintainer
+  affiliation: Roswell Park Cancer Institute, Elm and Carlton St, Buffalo, NY 14263
 ---
 
 The liftOver facilities developed in conjunction with the UCSC
@@ -13,6 +16,20 @@ browser track infrastructure are available for transforming
 data in GRanges formats.  This is illustrated here with
 an image of the EBI/NHGRI GWAS catalog that is, as of May 10 2017,
 distributed with coordinates defined by NCBI build hg38.
+
+# Version Info
+```{r, echo=FALSE, results="hide", warning=FALSE}
+suppressPackageStartupMessages({
+library('liftOver')
+})
+```
+<p>
+**R version**: `r R.version.string`
+<br />
+**Bioconductor version**: `r BiocInstaller::biocVersion()`
+<br />
+**Package version**: `r packageVersion("liftOver")`
+</p>
 
 # Setup: The NHGRI GWAS catalog as an hg38-based GRanges
 
@@ -31,7 +48,7 @@ cur = makeCurrentGwascat()  # result varies by day
 
 ```{r lkcur}
 data(cur)
-cur
+# cur
 ```
 
 # Resource: The chain file for hg38 to hg19 transformation
