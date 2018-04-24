@@ -9,13 +9,16 @@ vignette: >
 author:
 - name: Bioconductor Maintainer
   affiliation: Roswell Park Cancer Institute, Elm and Carlton St, Buffalo, NY 14263
----
+  email: maintainer@bioconductor.org
+abstract: >
 
-The liftOver facilities developed in conjunction with the UCSC
-browser track infrastructure are available for transforming
-data in GRanges formats.  This is illustrated here with
-an image of the EBI/NHGRI GWAS catalog that is, as of May 10 2017,
-distributed with coordinates defined by NCBI build hg38.
+  The liftOver facilities developed in conjunction with the UCSC
+  browser track infrastructure are available for transforming
+  data in GRanges formats.  This is illustrated here with
+  an image of the EBI/NHGRI GWAS catalog that is, as of May 10 2017,
+  distributed with coordinates defined by NCBI build hg38.
+
+---
 
 # Version Info
 ```{r, echo=FALSE, results="hide", warning=FALSE}
