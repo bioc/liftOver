@@ -29,7 +29,7 @@ library('liftOver')
 <p>
 **R version**: `r R.version.string`
 <br />
-**Bioconductor version**: `r BiocInstaller::biocVersion()`
+**Bioconductor version**: `r BiocManager::version()`
 <br />
 **Package version**: `r packageVersion("liftOver")`
 </p>
