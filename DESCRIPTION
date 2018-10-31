@@ -1,6 +1,6 @@
 Package: liftOver
 Title: Changing genomic coordinate systems with rtracklayer::liftOver 
-Version: 1.6.0
+Version: 1.7.0
 Date: 2017-09-05
 Authors@R: c(person(role=c("aut", "cre"), "Bioconductor Package Maintainer", email = "maintainer@bioconductor.org"))
 Description: The liftOver facilities developed in conjunction with the UCSC
