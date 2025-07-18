@@ -38,6 +38,7 @@ library('liftOver')
 
 ```{r doit,echo=FALSE,results="hide"}
 library(gwascat)
+library(GenomeInfoDb)
 library(GenomicRanges)
 library(rtracklayer)
 library(Homo.sapiens)

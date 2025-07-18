@@ -10,6 +10,7 @@ Description: The liftOver facilities developed in conjunction with the UCSC
     distributed with coordinates defined by NCBI build hg38.
 Depends: R (>= 3.3.0),
          gwascat,
+         GenomeInfoDb,
          GenomicRanges,
          rtracklayer,
          Homo.sapiens,
@@ -22,3 +23,4 @@ biocViews: Workflow, BasicWorkflow
 Suggests: knitr, rmarkdown, BiocStyle
 NeedsCompilation: no
 URL: https://www.bioconductor.org/help/workflows/liftOver/
+RoxygenNote: 7.3.2
